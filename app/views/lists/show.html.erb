@@ -1,0 +1,17 @@
+<h1 class"text-center"><%= @list.name %></h1>
+<div class="cards">
+  <% @bookmarks.each do |bm| %>
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= bm.movie.title %></h2>
+          <p><%= bm.movie.overview %></p>
+        </div>
+        <h2 class="card-trip-pricing"><%= bm.movie.rating %></h2>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to 'All watchlists', lists_path(@list) %>
+<%= link_to 'Create new bookmark', new_list_bookmark_path(@list) %>
