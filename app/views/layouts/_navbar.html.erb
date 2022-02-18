@@ -13,10 +13,10 @@
       <ul class="navbar-nav me-auto">
         <%# if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "My lists", lists_path(@list), class: "nav-link" %>
+            <%= link_to "My lists", lists_path(@list), class: "btn btn-ghost" %>
           </li>
           <li class="nav-item">
-            <%= link_to "New list", new_list_path(@list), class: "nav-link" %>
+            <%= link_to "New list", new_list_path(@list), class: "btn btn-ghost" %>
           </li>
 
         <%# else %>
