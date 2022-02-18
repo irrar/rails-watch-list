@@ -3,6 +3,7 @@
 <div class="form-inputs">
   <%= f.input :comment %>
   <%= f.association :movie %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit "Create new bookmark", class: "btn btn-flat" %>
 </div>
 <% end %>
