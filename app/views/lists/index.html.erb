@@ -1,7 +1,7 @@
 <h1>My watchlists</h1>
 <div class="watchlists">
   <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1568876694728-451bbf694b83)">
       <%=  link_to list.name, list_path(list) %>
     </div>
   <% end %>
