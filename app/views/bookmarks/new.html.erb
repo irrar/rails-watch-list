@@ -1,8 +1,10 @@
 <h1>Create new bookmark</h1>
 <%= simple_form_for ([ @list, @bookmark ]) do |f| %>
+<div class="form-inputs">
   <%= f.input :comment %>
   <%= f.association :movie %>
   <%= f.submit "Create new bookmark", class: "btn btn-flat" %>
+</div>
 <% end %>
 <br>
 <%= link_to 'Back to watchlist', list_path(@list), class: 'btn btn-flat' %>

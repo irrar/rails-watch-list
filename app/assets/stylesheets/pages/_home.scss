@@ -1,5 +1,24 @@
 // Specific CSS for your home-page
+body {
+  background-color: $main-gray;
+}
+
 .container {
   margin: 0 auto;
   margin-top: 2rem;
+  color: $offwhite;
+}
+
+.container h1 {
+  background-color: $sub-gray;
+  padding: 10px;
+  margin-left: 1rem;
+  border-radius: 10px;
+  color: $offwhite;
+  font-size: 25px;
+  width: max-content;
+}
+
+.container a {
+  margin-left: 1rem;
 }
