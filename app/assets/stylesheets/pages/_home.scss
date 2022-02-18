@@ -22,3 +22,10 @@ body {
 .container a {
   margin-left: 1rem;
 }
+
+.watchlists {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin: 1rem;
+}
